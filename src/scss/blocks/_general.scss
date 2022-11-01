@@ -1,0 +1,42 @@
+// GENERAL PROJECT STYLES
+
+::placeholder{
+  color: #666;
+}
+
+::selection{
+  background-color: $accent;
+  color: #fff;
+}
+
+body{
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+  color: $textcolor;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+
+  background-color: #1C1C1C;
+  font-weight: 300;
+}
+
+.button{
+  background-color: $accent;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10em;
+  font-size: 16px;
+  transition: background-color 0.25s ease;
+  text-decoration: none;
+  &:hover{
+    color: #fff;
+    background-color: darken($accent, 10);
+  }
+}
+
+.text-center{
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+// USER VARIABLES SECTION
+
+$accent: #B01DDC; // Accent Color
+$fontsize: 18px; // Body Font Size
+$textcolor: #fff; // Text Color
+$lineheight: 1.65; // Document Line Height
+$userfont: 'ubuntu-my', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: url($furl) format('woff2');
+	}
+}
+
+@include font('ubuntu-my', normal, 300, '../fonts/ubuntu-light-webfont.woff2');
+@include font('ubuntu-my', normal, 400, '../fonts/ubuntu-regular-webfont.woff2');
+@include font('ubuntu-my', normal, 700, '../fonts/ubuntu-bold-webfont.woff2');

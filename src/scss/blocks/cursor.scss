@@ -1,0 +1,50 @@
+// cursor
+*{
+  cursor: none;
+  @include media-breakpoint-down(lg){
+    cursor: auto;
+  }
+}
+
+#cursor,
+#aura{
+  //position: absolute;
+  position: fixed;
+  border-radius: 100%;
+  transition: .5s cubic-bezier(.75,-1.27,.3,2.33) transform, .2s cubic-bezier(.75,-1.27,.3,2.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+  @include media-breakpoint-down(lg){
+    display: none;
+  }
+}
+
+#cursor{
+  width: 8px;
+  height: 8px;
+  background-color: rgba(#fff, .5);
+  &.active{
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+#aura{
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(#fff, .2);
+  background-color: rgba(#fff, .027);
+  transform: translate(5px, 5px);
+  &.active{
+    border: 1.2px solid rgba(#fff, .33);
+    transform: scale(1.3);
+  }
+}
+
+#cursor,
+#aura{
+  &.hidden{
+    transform: scale(.001);
+  }
+}
