@@ -67,7 +67,7 @@ gulp.task("build-sass", () => {
 });
 
 gulp.task("copy-assets", () => {
-    gulp.src("./src/fonts/**/*.*")
+    return gulp.src("./src/fonts/**/*.*")
         .pipe(gulp.dest(dist + "/fonts"));
 
     // return gulp.src("./src/img/**/*.*")
