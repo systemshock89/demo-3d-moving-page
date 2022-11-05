@@ -57,6 +57,7 @@
     font-weight: bold;
     padding: 10px;
     text-decoration: none;
+    white-space: nowrap;
     @include media-breakpoint-up(md) {
       margin-left: 40px;
     }
@@ -111,6 +112,7 @@
     font-size: 16px;
     text-decoration: none;
     transition: color 0.1s ease-in-out;
+    white-space: nowrap;
     @include media-breakpoint-down(lg){
       margin-top: 10px;
       margin-bottom: 30px;
