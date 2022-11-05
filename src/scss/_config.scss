@@ -24,6 +24,7 @@ $gutter: $grid-gutter-width;
 		font-style: $fstyle;
 		font-weight: $fweight;
 		src: url($furl) format('woff2');
+		font-display: swap;
 	}
 }
 
