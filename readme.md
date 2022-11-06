@@ -1,10 +1,19 @@
-<h1>Project with gsap</h1>
-<p>Animate elements and cursor with gsap (GreenSock)</p>
+<h1>3D animate</h1>
+<p>3D animate elements and cursor with gsap (GreenSock)</p>
+<p><a href="https://systemshock89.github.io/3d-animate/" target="_blank">See example</a></p>
 
 <h2>Used features</h2>
 <ul>
     <li>gsap, requestAnimationFrame</li>
-    <li>js in modules</li>
     <li>css transform, perspective</li>
+    <li>Bootstrap grid</li>
+    <li>js in modules</li>
     <li>webpack + gulp</li>
 </ul>
+
+<h2>How to use</h2>
+<ol>
+    <li>git clone</li>
+    <li>npm i</li>
+    <li>gulp</li>
+</ol>
