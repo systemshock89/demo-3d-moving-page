@@ -1,6 +1,6 @@
-<h1>3D animate</h1>
-<p>3D animate elements and custom cursor (with hover in links) with gsap (GreenSock)</p>
-<p><a href="https://systemshock89.github.io/demo-3d-animate/">See demo</a></p>
+<h1>3D moving page</h1>
+<p>3D animate elements on page when mouse move and custom cursor (with hover in links) with gsap (GreenSock)</p>
+<p><a href="https://systemshock89.github.io/demo-3d-moving-page/">See demo</a></p>
 
 <h2>Used features</h2>
 <ul>
